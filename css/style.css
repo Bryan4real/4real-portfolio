@@ -11,17 +11,32 @@ html{
   padding: 0 100px 0 100px;
 
 }
-nav ul,
+nav{
+  margin-top: auto;
+  float:right;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+ul a,
 .main-info-section,
 .work-category{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+ul a:hover{
+  text-decoration: none;
+  color: #fff;
+}
 body{
   background-color: #252627;
 }
 header{
+  width: 88%;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -39,10 +54,12 @@ header a,
 .contact h1{
   color: #707070;
 }
+
 li{
   list-style: none;
   margin-left: 30px;
 }
+
 a{
   text-decoration: none;
   font-size: .9rem;
@@ -112,10 +129,14 @@ span.m-left{
 .text a:hover::before{
   height: 100%;
 }
+.row{
+  width: 100%;
+}
 .profile-image img {
   width: 300px;
   margin-top: 50px;
   border-radius: 50%;
+  float: right;
 }
 .about{
   height: 100vh;
