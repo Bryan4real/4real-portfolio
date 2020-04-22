@@ -44,7 +44,7 @@ const showRequiredCategory = event => {
   for(i=0; i<categories.length; i++){
     if(categories[i].hasAttribute('class')){
       categories[i].classList.remove('showCategory')
-      categories[i].classList.addd('hideCategory')
+      categories[i].classList.add('hideCategory')
 
     }
   }
